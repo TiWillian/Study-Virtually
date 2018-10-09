@@ -1,1 +1,5 @@
-# Study-Virtually
+# Equipe
+## Study Virtually
+* Willian 
+* Victor 
+* Matheus 
