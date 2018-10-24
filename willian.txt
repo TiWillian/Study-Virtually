@@ -45,3 +45,245 @@
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Cadastro</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<form class="cadastro" action="servidor.html" method="post" onsubmit="return validar()">
+
+		<fieldset>
+			<legend>Cadastro pessoal</legend>
+
+			<div>
+				<label>Nome Completo</label>
+				<input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+			</div>
+
+			<div>
+				<label>E-mail</label>
+				<input type="email" id="email" name="email">
+			</div>
+
+			<div>
+				<label>Senha</label>
+				<input type="password" name="senha" placeholder="Digite sua senha" maxlength="15" minlength="5">
+			</div>
+
+			<div>
+				<label>Nome de Usuário</label>
+				<input type="text" id="nome" name="usuario" placeholder="Digite o seu nome">
+			</div>
+
+			<div>
+				
+			<label>Data de Nascimento:</label>
+			<input type="date" name="data_nascimento">
+
+			</div>
+
+			<div>
+
+				<label>Sexo</label>
+				<input type="radio" name="sexo"> Masculino
+				<input type="radio" name="sexo"> Feminino
+
+			</div>
+
+			<div>
+				
+				<label>Curso</label>
+				<select name="curso">
+					<option>-</option>
+					<option>Sistemas de Informação</option>	
+				</select>
+			
+			</div>
+
+			<div>
+				
+				<button type="submit">Cadastrar</button>
+				<button type="reset">Limpar</button>
+
+			</div>
+
+		</fieldset>
+
+	</form>	
+
+
+
+
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Pagina Principal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<nav class="navbar fixed-top navbar-dark navbar-expand-lg">
+			<div class="container">
+
+				<div class="collapse navbar-collapse" id="navcinema">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+						<li class="nav-item"><a class="nav-link" href="curso.html">Cursos</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+						
+
+					</ul>
+				</div>
+
+
+
+
+			</div>
+
+		</nav>
+		<form  class="login" action="principal.html" method="post">
+		
+		<fieldset>
+
+			<div>
+
+				<label>Usuário ou Email</label><br>
+				<textarea cols="35" rows="1"></textarea>
+
+			</div>
+
+			<div>
+
+				<label>Senha</label><br>
+				<textarea cols="35" rows="1"></textarea>
+
+			</div>
+
+			<div>
+				
+				<button type="submit"><a href="curso.html">Login</a></button>
+				
+			</div>
+
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Curso</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<h2>Escolha um curso:</h2>
+	<form  class="curso" action="curso.html" method="post">
+		
+		<fieldset>
+			<div>
+				
+				<label>Curso</label><br><br>
+				<select name="curso">
+					<option>-</option>
+					<option>Sistemas de Informação</option>
+				</select>
+			
+			</div>
+			<br>
+			<div>
+				
+				<button type="submit"><a href="materia.html">Avançar</a></button>
+				
+			</div>
+
+		</fieldset>
+	</form>
+
+</body>
+
+
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Matéria</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<h2>Grade curricular:</h2>
+	<form  class="materia" action="materia.html" method="post">
+		
+		<fieldset>
+			<div>
+				
+				<label>Grade</label><br><br>
+				<select name="curso">
+					<option>-</option>
+					<option>Sistemas de Informação</option>
+				</select>
+			
+			</div>
+			<br>
+			<div>
+				
+				<button type="submit">Enviar</button>
+				
+			</div>
+
+		</fieldset>
+	</form>
+
+
+</body>
+
+
+</html>
