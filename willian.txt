@@ -10,36 +10,36 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="cor">
 
-	<h2>Login</h2>
+	<h2 align="middle">Login</h2>
 	<form  class="login" action="index.html" method="post">
 		
-		<fieldset>
+		<fieldset class="parte">
 
-			<div>
+			<div class="divone" align="middle">
 
-				<label>Usuário ou Email</label><br>
+				<label >Usuário ou Email</label><br>
 				<textarea cols="35" rows="1"></textarea>
 
 			</div>
 
-			<div>
+			<div class="pois" align="middle">
 
 				<label>Senha</label><br>
 				<textarea cols="35" rows="1"></textarea>
 
 			</div>
 
-			<div>
+			<div class="pois" align="middle">
 				
 				<button type="submit">Login</button>
 				
 			</div>
-
-			<p>Ainda não é cadastrado? <a href="cadastro.html" class="cadastro">Cadastre-se Aqui !</a></p>
+			<p class="core" class="pois" align="middle">Ainda não é cadastrado ? Cadastre-se Abaixo </p>
 
 
 </body>
@@ -65,36 +65,36 @@
 	<form class="cadastro" action="servidor.html" method="post" onsubmit="return validar()">
 
 		<fieldset>
-			<legend>Cadastro pessoal</legend>
+			<legend class="pois">Cadastro pessoal</legend>
 
-			<div>
+			<div class="pois" >
 				<label>Nome Completo</label>
-				<input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+				<input class="box"  type="text" id="nome" name="nome" placeholder="Digite o seu nome">
 			</div>
 
-			<div>
-				<label>E-mail</label>
-				<input type="email" id="email" name="email">
+			<div class="pois">
+				<label>E-maiL</label>
+				<input class="boxx" type="email" id="email" name="email" placeholder="Digite seu E-mail" maxlength="20" minlength="5">
 			</div>
 
-			<div>
+			<div class="pois">
 				<label>Senha</label>
-				<input type="password" name="senha" placeholder="Digite sua senha" maxlength="15" minlength="5">
+				<input class="boxxx" type="password" name="senha" placeholder="Digite sua senha" maxlength="15" minlength="5">
 			</div>
 
-			<div>
-				<label>Nome de Usuário</label>
-				<input type="text" id="nome" name="usuario" placeholder="Digite o seu nome">
+			<div class="pois">
+				<label>Nome de usuário</label>
+				<input class="boxxxx" type="text" id="nome" name="usuario" placeholder="Digite o seu nome">
 			</div>
 
-			<div>
+			<div class="pois">
 				
 			<label>Data de Nascimento:</label>
-			<input type="date" name="data_nascimento">
+			<input class="box" type="date" name="data_nascimento">
 
 			</div>
 
-			<div>
+			<div class="pois">
 
 				<label>Sexo</label>
 				<input type="radio" name="sexo"> Masculino
@@ -102,7 +102,7 @@
 
 			</div>
 
-			<div>
+			<div class="pois">
 				
 				<label>Curso</label>
 				<select name="curso">
@@ -112,7 +112,7 @@
 			
 			</div>
 
-			<div>
+			<div class="pois">
 				
 				<button type="submit">Cadastrar</button>
 				<button type="reset">Limpar</button>
@@ -153,6 +153,7 @@
 
 				<div class="collapse navbar-collapse" id="navcinema">
 					<ul class="navbar-nav">
+						
 						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
 						<li class="nav-item"><a class="nav-link" href="curso.html">Cursos</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
@@ -171,21 +172,21 @@
 		
 		<fieldset>
 
-			<div>
+			<div class="pois">
 
 				<label>Usuário ou Email</label><br>
 				<textarea cols="35" rows="1"></textarea>
 
 			</div>
 
-			<div>
+			<div class="pois">
 
 				<label>Senha</label><br>
 				<textarea cols="35" rows="1"></textarea>
 
 			</div>
 
-			<div>
+			<div class="pois">
 				
 				<button type="submit"><a href="curso.html">Login</a></button>
 				
@@ -217,7 +218,7 @@
 	<form  class="curso" action="curso.html" method="post">
 		
 		<fieldset>
-			<div>
+			<div class="pois">
 				
 				<label>Curso</label><br><br>
 				<select name="curso">
@@ -226,8 +227,8 @@
 				</select>
 			
 			</div>
-			<br>
-			<div>
+			
+			<div class="pois">
 				
 				<button type="submit"><a href="materia.html">Avançar</a></button>
 				
@@ -263,7 +264,7 @@
 	<form  class="materia" action="materia.html" method="post">
 		
 		<fieldset>
-			<div>
+			<div class="pois">
 				
 				<label>Grade</label><br><br>
 				<select name="curso">
@@ -272,8 +273,8 @@
 				</select>
 			
 			</div>
-			<br>
-			<div>
+			
+			<div class="pois">
 				
 				<button type="submit">Enviar</button>
 				
@@ -287,3 +288,19 @@
 
 
 </html>
+
+body{color:#B22222;}
+body{background:#EEE8AA;}
+.cor{background:#B40404;}
+.parrte{color: #8B0000;}
+h2 {color: #F7F2E0;}
+.pois{background: #000000;}
+.divone{background:#000000;}
+label{color: #E0F8E6;}
+.cadastro{color:black;}
+p {color: white;}
+.core{color:white;}
+.box{text-align: center;padding-right: 6px;}
+.boxx{padding-right: 5%;}
+.boxxx{padding-right: 73px;}
+.boxxxx{padding-left: 3px; }
