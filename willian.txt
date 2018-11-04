@@ -10,188 +10,126 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body class="cor">
-
-	<h2 align="middle">Login</h2>
-	<form  class="login" action="index.html" method="post">
+<body>
+	
+	
 		
-		<fieldset class="parte">
-
-			<div class="divone" align="middle">
-
-				<label >Usuário ou Email</label><br>
-				<textarea cols="35" rows="1"></textarea>
-
-			</div>
-
-			<div class="pois" align="middle">
-
-				<label>Senha</label><br>
-				<textarea cols="35" rows="1"></textarea>
-
-			</div>
-
-			<div class="pois" align="middle">
-				
-				<button type="submit">Login</button>
-				
-			</div>
-			<p class="core" class="pois" align="middle">Ainda não é cadastrado ? Cadastre-se Abaixo </p>
-
-
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-
-	<title>Cadastro</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</head>
-
-<body>
-
-	<form class="cadastro" action="servidor.html" method="post" onsubmit="return validar()">
-
-		<fieldset>
-			<legend class="pois">Cadastro pessoal</legend>
-
-			<div class="pois" >
-				<label>Nome Completo</label>
-				<input class="box"  type="text" id="nome" name="nome" placeholder="Digite o seu nome">
-			</div>
-
-			<div class="pois">
-				<label>E-maiL</label>
-				<input class="boxx" type="email" id="email" name="email" placeholder="Digite seu E-mail" maxlength="20" minlength="5">
-			</div>
-
-			<div class="pois">
-				<label>Senha</label>
-				<input class="boxxx" type="password" name="senha" placeholder="Digite sua senha" maxlength="15" minlength="5">
-			</div>
-
-			<div class="pois">
-				<label>Nome de usuário</label>
-				<input class="boxxxx" type="text" id="nome" name="usuario" placeholder="Digite o seu nome">
-			</div>
-
-			<div class="pois">
-				
-			<label>Data de Nascimento:</label>
-			<input class="box" type="date" name="data_nascimento">
-
-			</div>
-
-			<div class="pois">
-
-				<label>Sexo</label>
-				<input type="radio" name="sexo"> Masculino
-				<input type="radio" name="sexo"> Feminino
-
-			</div>
-
-			<div class="pois">
-				
-				<label>Curso</label>
-				<select name="curso">
-					<option>-</option>
-					<option>Sistemas de Informação</option>	
-				</select>
-			
-			</div>
-
-			<div class="pois">
-				
-				<button type="submit">Cadastrar</button>
-				<button type="reset">Limpar</button>
-
-			</div>
-
-		</fieldset>
-
-	</form>	
-
-
-
-
-
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-
-	<title>Pagina Principal</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-</head>
-
-<body>
-
-	<nav class="navbar fixed-top navbar-dark navbar-expand-lg">
-			<div class="container">
-
-				<div class="collapse navbar-collapse" id="navcinema">
-					<ul class="navbar-nav">
+		<img id="study" src="imagens/Study Virtually.jpg" >
 						
-						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-						<li class="nav-item"><a class="nav-link" href="curso.html">Cursos</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-						
+				<form  class="cadastros" action="index.html" method="post">
+									
+					<fieldset>
+							
+						<div>
 
-					</ul>
+							<label>Usuário ou Email</label><br>
+							<textarea cols="35" rows="1"></textarea>
+
+						</div>
+						
+						<div>
+						
+							<label>Senha</label><br>
+							<textarea cols="35" rows="1"></textarea>
+
+						</div>
+
+						<div>
+											
+							<button type="submit">Login</button>
+											
+						</div>
+
+						<p>Ainda não é cadastrado? Cadastre-se Abaixo !</p>
+					</fieldset>	
+				</form>
+
+		<br><br>
+	<section class="container" class="row" class="col-md-12" id="index">	
+		<div class="container">
+				
+			<div class="row ">			
+
+
+				<div class="col-md-7 imagem">
+
+					
+
 				</div>
-
-
-
-
-			</div>
-
-		</nav>
-		<form  class="login" action="principal.html" method="post">
-		
-		<fieldset>
-
-			<div class="pois">
-
-				<label>Usuário ou Email</label><br>
-				<textarea cols="35" rows="1"></textarea>
-
-			</div>
-
-			<div class="pois">
-
-				<label>Senha</label><br>
-				<textarea cols="35" rows="1"></textarea>
-
-			</div>
-
-			<div class="pois">
+			
 				
-				<button type="submit"><a href="curso.html">Login</a></button>
-				
-			</div>
 
+					<div class="col-md-5 cadastropr">
+						<form class="cadastro" action="servidor.html" method="post" onsubmit="return validar()">
+
+							<fieldset>
+								<legend id="cadastrop">Cadastro pessoal</legend>
+
+								<div id="cadastrop">
+									<label>Nome Completo</label>
+									<textarea cols="50" rows="1" placeholder="Digite seu nome"></textarea>
+									
+								</div>
+
+								<div id="cadastrop">
+									<label>E-mail</label>
+									<textarea cols="50" rows="1" placeholder="Digite seu nome"></textarea>
+									
+								</div>
+
+								<div id="cadastrop">
+									<label>Senha</label>
+									<textarea cols="50" rows="1" placeholder="Digite seu nome"></textarea>
+									
+								</div>
+
+								<div id="cadastrop">
+									<label>Nome de Usuário</label>
+									<textarea cols="50" rows="1" placeholder="Digite seu nome"></textarea>
+									
+
+								<div id="cadastrop">
+									
+								<label>Data de Nascimento:</label>
+								<textarea cols="50" rows="1" placeholder="Digite seu nome"></textarea>
+								
+
+								</div>
+
+								<div id="cadastrop">
+
+									<label>Sexo</label>
+
+									<input type="radio" name="sexo"> Masculino
+									<input type="radio" name="sexo"> Feminino
+
+								</div>
+
+								<div id="cadastrop">
+									
+									<label>Curso</label>
+									<select name="curso">
+										<option>-</option>
+										<option>Sistemas de Informação</option>	
+									</select>
+								
+								</div>
+
+								<div id="cadastrop">
+									
+									<button type="submit">Cadastrar</button>
+									<button type="reset">Limpar</button>
+									<br>
+								</div>
+
+							</fieldset>
+
+						</form>		
+				</div>
+			</div>
+	</section>
 
 </body>
 
@@ -214,11 +152,11 @@
 
 <body>
 
-	<h2>Escolha um curso:</h2>
-	<form  class="curso" action="curso.html" method="post">
+	<h2 id="cursoescolha">Escolha um curso:</h2>
+	<form  class="cadastro" action="index.html" method="post">
 		
-		<fieldset>
-			<div class="pois">
+		<fieldset id="cursoescolha">
+			<div>
 				
 				<label>Curso</label><br><br>
 				<select name="curso">
@@ -227,10 +165,10 @@
 				</select>
 			
 			</div>
-			
-			<div class="pois">
+			<br>
+			<div>
 				
-				<button type="submit"><a href="materia.html">Avançar</a></button>
+				<button type="submit">Avançar</button>
 				
 			</div>
 
@@ -248,7 +186,7 @@
 
 <head>
 
-	<title>Matéria</title>
+	<title>Curso</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -260,47 +198,141 @@
 
 <body>
 
-	<h2>Grade curricular:</h2>
-	<form  class="materia" action="materia.html" method="post">
+	<h2 id="cursoescolha">Escolha um curso:</h2>
+	<form  class="cadastro" action="index.html" method="post">
 		
-		<fieldset>
-			<div class="pois">
+		<fieldset id="cursoescolha">
+			<div>
 				
-				<label>Grade</label><br><br>
+				<label>Curso</label><br><br>
 				<select name="curso">
 					<option>-</option>
 					<option>Sistemas de Informação</option>
 				</select>
 			
 			</div>
-			
-			<div class="pois">
+			<br>
+			<div>
 				
-				<button type="submit">Enviar</button>
+				<button type="submit">Avançar</button>
 				
 			</div>
 
 		</fieldset>
 	</form>
 
-
 </body>
+
 
 
 </html>
 
-body{color:#B22222;}
-body{background:#EEE8AA;}
-.cor{background:#B40404;}
-.parrte{color: #8B0000;}
-h2 {color: #F7F2E0;}
-.pois{background: #000000;}
-.divone{background:#000000;}
-label{color: #E0F8E6;}
-.cadastro{color:black;}
-p {color: white;}
-.core{color:white;}
-.box{text-align: center;padding-right: 6px;}
-.boxx{padding-right: 5%;}
-.boxxx{padding-right: 73px;}
-.boxxxx{padding-left: 3px; }
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Pagina Principal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<nav class="navbar fixed-top navbar-dark navbar-expand-lg">
+			<div class="container">
+				<a href="index.html"><img class="logo" src="imagens/logo.png" alt="Logomarca"></a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#navcinema" 
+				aria-controls="navcinema" 
+				aria-label="Toggle navigation"
+				aria-expanded=false>
+				
+
+
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navcinema">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+						
+
+					</ul>
+				</div>
+
+
+
+
+			</div>
+
+		</nav>
+
+		<img id="preto" src="imagens/preto.jpg">
+
+</body>
+
+</html>
+
+body{
+	background-color: gray;
+
+}
+
+.preto{
+	background-color: black;
+	width: 1500px;
+}
+.cadastros{
+	margin: auto;
+	display: block;
+	text-align: center;
+
+}
+
+#login{
+
+}
+
+#cursoescolha{
+	margin-left: 410px;
+	margin-top: 100px;
+}
+
+#grade{
+	margin-left: 410px;
+	margin-top: 100px;
+}
+
+.nav-link{
+	padding: 20px;
+
+}
+
+.navbar-nav{
+	padding-left: 80px;
+
+}	
+
+.nav-item{
+	padding-left: 50px;
+}
+
+#preto{
+	width: 1024px; 
+	height: 90px;
+}
+
+#study{
+	
+}
+
+
