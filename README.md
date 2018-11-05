@@ -1,5 +1,5 @@
 # Equipe
 ## Study Virtually
-* Willian 
-* Victor 
+* Willian Magalhães
+* Victor Romário
 * Mateus Lima
