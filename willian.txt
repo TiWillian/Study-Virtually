@@ -186,7 +186,7 @@
 
 <head>
 
-	<title>Curso</title>
+	<title>Matéria</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -198,13 +198,13 @@
 
 <body>
 
-	<h2 id="cursoescolha">Escolha um curso:</h2>
+	<h2 id="grade">Grade curricular:</h2>
 	<form  class="cadastro" action="index.html" method="post">
 		
-		<fieldset id="cursoescolha">
+		<fieldset id="grade">
 			<div>
 				
-				<label>Curso</label><br><br>
+				<label>Grade</label><br><br>
 				<select name="curso">
 					<option>-</option>
 					<option>Sistemas de Informação</option>
@@ -214,19 +214,18 @@
 			<br>
 			<div>
 				
-				<button type="submit">Avançar</button>
+				<button type="submit">Enviar</button>
 				
 			</div>
 
 		</fieldset>
 	</form>
 
+
 </body>
 
 
-
 </html>
-
 <!DOCTYPE html>
 <html>
 
