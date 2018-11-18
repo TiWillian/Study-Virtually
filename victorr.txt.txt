@@ -323,13 +323,74 @@ div {
       </nav>
  
         <ul class="widget">
-  <span class="titulo">Outros links <span class="og">  <img src="http://www.purevb.com/demo/images/styles/elegance/buttons/collapse_tcat.png" class="one"><img src="http://www.purevb.com/demo/images/styles/elegance/buttons/collapse_tcat_collapsed.png" class="two"></span></span><br><br>
+  
   <div id="widget-content">
   <li class="first"><a href="">Facebook</a></li>
   <li><a href="http://wiki.sa-mp.com/wiki/Skins:All">Skins</a></li>
 <li><a href=""></a></li>
 </ul></div>
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dúvidas
+
+
+<table>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('#postIt').hide();
+    $('a#mostraPost').click(function(){
+       $('#postIt').slideToggle('slow');
+    });
+});
+
+$(document).ready(function(){
+$('#tudo').Draggable({
+  handle: '#mostra',
+  opacity: 0.7,
+  });
+});
+</script>
+<script type="text/javascript" src="jquery-1.4.2.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="iutil.js"></script>
+<script type="text/javascript" src="idrag.js"></script>
+
+<div id="tudo">
+<div id="mostra"><a id="mostraPost" href="#">Crie sua pergunta clicando aqui !</a></div>
+  <div id="postIt">
+  <div id="form">
+    <form action="#" method="post">
+      Nome: <input type="text" name="nome" id="nome" class="inputNome center"/><br/>
+      Pergunta:<br/>
+        <textarea rows="10" cols="40" class="textarea"></textarea><br/>
+        <input type="submit" value="Salvar" class="inputSalvar"/>
+      </form>
+    </div>  
+  </div>
+</div>
+
+
+
+
+</table>
+
+
+
   <script src="http://huddletogether.com/js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
  
   <script type="text/javascript">
@@ -352,3 +413,57 @@ div {
   </footer>
  
 </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+style/css
+
+#postIt{ 
+     display: none; 
+     background-image:url("/postit/post.png");
+     background-repeat:no-repeat;
+     height: 340px;
+     width: 300px;
+     z-index: 1;  
+}
+
+#tudo{ width: 300px;}
+#mostraPost{margin-left: 10px;}
+#form{ position: absolute; top: 80px; left: 30px; }
+#conteudo{position: absolute; top: 90px; left: 30px;}
+#form input.inputSalvar{
+  margin-top: 10px; 
+  background-color: transparent;
+}
+
+#form input.inputNome{
+  background-color: transparent;  
+  font-size: 12px; border: none;
+}
+
+#mostra{
+   background-color: yellow; 
+   -moz-border-radius-topleft: 32px; 
+   -moz-border-radius-topright: 32px;
+}
+
+#form textarea{
+   margin-top: 10px; 
+   font-family: arial;
+   font-size: 12px;
+   border-style: none;  
+   background-color:transparent;  
+}
+#center{
+  text-align: center;
+}
